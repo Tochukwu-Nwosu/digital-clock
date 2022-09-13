@@ -34,12 +34,7 @@ const getTimeFor12Hrs = () => {
     let minutesValue = time.getMinutes();
     let secondsValue = time.getSeconds();
 
-    if (hoursValue >= 12) {
-        session.innerHTML = "PM";
-    }
-    else {
-        session.innerHTML = "AM";
-    }
+    (hoursValue >= 12) ? session.innerHTML = "PM" : session.innerHTML = "AM";
     
     if (hoursValue > 12) {
         hoursValue %= 12;
@@ -51,8 +46,6 @@ const getTimeFor12Hrs = () => {
     
     minutesSecondClock.innerHTML = lessThanTen(minutesValue);
     secondsSecondClock.innerHTML = lessThanTen(secondsValue); 
-
-
 }
 
 setInterval(getTimeFor24Hrs, 0);
