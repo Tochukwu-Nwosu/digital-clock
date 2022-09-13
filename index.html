@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <div class="clockContainer">
+            <div class="firstClock">
+                <span id="hoursFirstClock"></span>:
+                <span id="minutesFirstClock"></span>:
+                <span id="secondsFirstClock"></span>
+            </div>
+            <div class="secondClock">
+                <span id="hoursSecondClock"></span>:
+                <span id="minutesSecondClock"></span>:
+                <span id="secondsSecondClock"></span>
+                <span id="session"></span>
+            </div>
+            <div id="dateText"></div>
+        </div>
     
-    <div class="clockContainer">
-        <div class="firstClock">
-            <span id="hoursFirstClock"></span>:
-            <span id="minutesFirstClock"></span>:
-            <span id="secondsFirstClock"></span>
-        </div>
-        <div class="secondClock">
-            <span id="hoursSecondClock"></span>:
-            <span id="minutesSecondClock"></span>:
-            <span id="secondsSecondClock"></span>
-            <span id="session"></span>
-        </div>
-        <div id="dateText"></div>
+        <button>12-Hour Time</button>
     </div>
-
-    <button>12-Hour Time</button>
+    
 
 
     <script src="digital-clock.js"></script>

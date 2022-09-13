@@ -65,11 +65,11 @@ const getCurrentDate = ()=> {
 const displayTime = () => {
     if (button.innerHTML === "12-Hour Time") {
         firstClock.style.display = "none";
-        secondClock.style.display = "block"; 
+        secondClock.style.display = "flex"; 
         button.innerHTML = "24-Hour Time";
     }
     else {
-        firstClock.style.display = "block";
+        firstClock.style.display = "flex";
         secondClock.style.display = "none"; 
         button.innerHTML = "12-Hour Time";
     }
