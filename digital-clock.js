@@ -7,6 +7,7 @@ let hoursSecondClock = document.querySelector("#hoursSecondClock");
 let minutesSecondClock = document.querySelector("#minutesSecondClock");
 let secondsSecondClock = document.querySelector("#secondsSecondClock");
 let session = document.querySelector("#session");
+let dateText = document.querySelector("#dateText");
 
 const lessThanTen = (value) => {
     if (value < 10) {
@@ -48,5 +49,18 @@ const getTimeFor12Hrs = () => {
     secondsSecondClock.innerHTML = lessThanTen(secondsValue); 
 }
 
+const getCurrentDate = ()=> {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let time = new Date();
+    let day = days[time.getDay()];
+    let month = months[time.getMonth()];
+    let date = time.getDate();
+
+    return `${day} ${date} ${month}`;
+}
+
 setInterval(getTimeFor24Hrs, 0);
 setInterval(getTimeFor12Hrs, 0);
+dateText.innerHTML = getCurrentDate();
