@@ -8,6 +8,7 @@ let minutesSecondClock = document.querySelector("#minutesSecondClock");
 let secondsSecondClock = document.querySelector("#secondsSecondClock");
 let session = document.querySelector("#session");
 let dateText = document.querySelector("#dateText");
+let button = document.querySelector("button");
 
 const lessThanTen = (value) => {
     if (value < 10) {
@@ -61,6 +62,20 @@ const getCurrentDate = ()=> {
     return `${day} ${date} ${month}`;
 }
 
+const displayTime = () => {
+    if (button.innerHTML === "12-Hour Time") {
+        firstClock.style.display = "none";
+        secondClock.style.display = "block"; 
+        button.innerHTML = "24-Hour Time";
+    }
+    else {
+        firstClock.style.display = "block";
+        secondClock.style.display = "none"; 
+        button.innerHTML = "12-Hour Time";
+    }
+}
+
 setInterval(getTimeFor24Hrs, 0);
 setInterval(getTimeFor12Hrs, 0);
 dateText.innerHTML = getCurrentDate();
+button.addEventListener('click', e => {displayTime()});
