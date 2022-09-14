@@ -93,3 +93,40 @@ button:active {
     border-radius: 50%;    
     z-index: -1;
 }
+
+
+@media screen and (max-width: 600px) {
+    .firstClock {
+        font-size: 3rem;
+    }
+    .secondClock {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ballOne {
+        bottom: 100px;
+        left: 90px;
+        transform: scale(1.7);
+    }
+}
+@media screen and (max-width: 360px) {
+    .firstClock {
+        font-size: 2.2rem;
+    }
+    .secondClock {
+        font-size: 2.2rem;
+    }
+    .ballOne {
+        bottom: 100px;
+        left: 50px;
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-height: 400px) {
+    .ballOne {
+        bottom: 50px;
+        left: 50px;
+        transform: scale(1.2);
+    }
+}
