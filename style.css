@@ -80,6 +80,7 @@ button:active {
     box-shadow: 0 0 8px rgb(255, 102, 179);
     border-radius: 50%;
     transform: scale(2);
+    animation: ballOne 10s ease-in-out infinite alternate;
     z-index: -2;
 }
 .ballTwo {
@@ -94,6 +95,13 @@ button:active {
     z-index: -1;
 }
 
+@keyframes ballOne {
+    100% {
+        bottom: 50%;
+        left: 50%;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .firstClock {
@@ -103,12 +111,26 @@ button:active {
         font-size: 3rem;
     }
 }
+@media screen and (max-width: 550px) {
+    @keyframes ballOne {
+        100% {
+            bottom: 50%;
+            left: 110px;
+        }
+    }    
+}
 @media screen and (max-width: 400px) {
     .ballOne {
         bottom: 100px;
         left: 90px;
         transform: scale(1.7);
     }
+    @keyframes ballOne {
+        100% {
+            bottom: 50%;
+            left: 90px;
+        }
+    }    
 }
 @media screen and (max-width: 360px) {
     .firstClock {
@@ -122,6 +144,12 @@ button:active {
         left: 50px;
         transform: scale(1.2);
     }
+    @keyframes ballOne {
+        100% {
+            bottom: 50%;
+            left: 50px;
+        }
+    }    
 }
 @media screen and (max-height: 400px) {
     .ballOne {
