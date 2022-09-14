@@ -92,6 +92,7 @@ button:active {
     background-image: linear-gradient(to left, rgb(36, 36, 143), rgb(102, 194, 255));
     box-shadow: 0 0 16px rgb(102, 194, 255);
     border-radius: 50%;    
+    animation: ballTwo 10s ease-in-out infinite alternate;
     z-index: -1;
 }
 
@@ -99,6 +100,12 @@ button:active {
     100% {
         bottom: 50%;
         left: 50%;
+    }
+}
+@keyframes ballTwo {
+    100% {
+        top: 50%;
+        right: 50%;
     }
 }
 
