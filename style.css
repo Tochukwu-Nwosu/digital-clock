@@ -80,8 +80,6 @@ button:active {
     box-shadow: 0 0 8px rgb(255, 102, 179);
     border-radius: 50%;
     transform: scale(2);
-    animation: ballOne 10s ease-in-out infinite alternate;
-    -webkit-animation: ballOne 10s ease-in-out infinite alternate;
     z-index: -2;
 }
 .ballTwo {
@@ -92,36 +90,10 @@ button:active {
     height: 200px;
     background-image: linear-gradient(to left, rgb(36, 36, 143), rgb(102, 194, 255));
     box-shadow: 0 0 16px rgb(102, 194, 255);
-    border-radius: 50%;    
-    animation: ballTwo 10s ease-in-out infinite alternate;
-    -webkit-animation: ballTwo 10s ease-in-out infinite alternate;
+    border-radius: 50%; 
     z-index: -1;
 }
 
-@keyframes ballOne {
-    100% {
-        bottom: 50%;
-        left: 50%;
-    }
-}
-@keyframes ballTwo {
-    100% {
-        top: 50%;
-        right: 50%;
-    }
-}
-@-webkit-keyframes ballOne{
-    100% {
-        bottom: 50%;
-        left: 50%;
-    }
-}
-@-webkit-keyframes ballTwo{
-    100% {
-        top: 50%;
-        right: 50%;
-    }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -132,38 +104,12 @@ button:active {
         font-size: 3rem;
     }
 }
-@media screen and (max-width: 550px) {
-    @keyframes ballOne {
-        100% {
-            bottom: 50%;
-            left: 110px;
-        }
-    }    
-    @-webkit-keyframes ballOne{
-        100% {
-            bottom: 50%;
-            left: 110px;
-        }
-    }
-}
 @media screen and (max-width: 400px) {
     .ballOne {
         bottom: 100px;
         left: 90px;
         transform: scale(1.7);
     }
-    @keyframes ballOne {
-        100% {
-            bottom: 50%;
-            left: 90px;
-        }
-    } 
-    @-webkit-keyframes ballOne{
-        100% {
-            bottom: 50%;
-            left: 90px;
-        }
-    }   
 }
 @media screen and (max-width: 360px) {
     .firstClock {
@@ -177,18 +123,6 @@ button:active {
         left: 50px;
         transform: scale(1.2);
     }
-    @keyframes ballOne {
-        100% {
-            bottom: 50%;
-            left: 50px;
-        }
-    }    
-    @-webkit-keyframes ballOne{
-        100% {
-            bottom: 50%;
-            left: 50px;
-        }
-    }   
 }
 @media screen and (max-height: 400px) {
     .ballOne {
