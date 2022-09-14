@@ -103,6 +103,11 @@ button:active {
     .secondClock {
         font-size: 3rem;
     }
+    .ballOne {
+        bottom: 100px;
+        left: 90px;
+        transform: scale(1.8);
+    }
 }
 @media screen and (max-width: 400px) {
     .ballOne {
