@@ -106,14 +106,7 @@ button:active {
     .ballOne {
         bottom: 100px;
         left: 90px;
-        transform: scale(1.8);
-    }
-}
-@media screen and (max-width: 400px) {
-    .ballOne {
-        bottom: 100px;
-        left: 90px;
-        transform: scale(1.7);
+        transform: scale(1.5);
     }
 }
 @media screen and (max-width: 360px) {
